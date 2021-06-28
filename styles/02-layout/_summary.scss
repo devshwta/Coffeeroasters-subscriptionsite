@@ -1,0 +1,27 @@
+.summary {
+  margin-top: 12rem;
+  text-align: center;
+  position: relative;
+
+  @media (min-width: $lg-breakpoint) {
+    text-align: right;
+  }
+
+  &__order {
+    text-align: left;
+    background-color: $dark-grey-blue;
+    color: $light-cream;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__heading {
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: $dark-cyan;
+  }
+}

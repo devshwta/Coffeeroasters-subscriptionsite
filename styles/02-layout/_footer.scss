@@ -1,0 +1,58 @@
+.footer {
+  margin-top: 12rem;
+  background-color: $dark-grey-blue;
+  color: $light-cream;
+  padding: 2rem;
+  text-align: center;
+
+  @media (min-width: $lg-breakpoint) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+
+    @media (min-width: $lg-breakpoint) {
+      margin: 0;
+    }
+
+    a {
+      display: block;
+    }
+  }
+
+  &__list {
+    @media (min-width: $md-breakpoint) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $grey;
+    padding: 1rem;
+    display: block;
+    font-weight: 700;
+  }
+
+  &__social {
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $lg-breakpoint) {
+      margin: 0;
+    }
+
+    a {
+      display: block;
+      padding: 1.25rem;
+    }
+  }
+}

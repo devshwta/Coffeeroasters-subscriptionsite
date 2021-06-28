@@ -1,0 +1,96 @@
+#homeBanner {
+  background: url("../../assets/home/mobile/image-hero-coffeepress.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $md-breakpoint) {
+    background: url("../../assets/home/tablet/image-hero-coffeepress.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+
+  @media (min-width: $xl-breakpoint) {
+    background: url("../../assets/home/desktop/image-hero-coffeepress.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+}
+
+#aboutBanner {
+  background: url("../../assets/about/mobile/image-hero-whitecup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $md-breakpoint) {
+    background: url("../../assets/about/tablet/image-hero-whitecup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+
+  @media (min-width: $xl-breakpoint) {
+    background: url("../../assets/about/desktop/image-hero-whitecup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+}
+
+#planBanner {
+  background: url("../../assets/plan/mobile/image-hero-blackcup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $md-breakpoint) {
+    background: url("../../assets/plan/tablet/image-hero-blackcup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+
+  @media (min-width: $xxl-breakpoint) {
+    background: url("../../assets/plan/desktop/image-hero-blackcup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+
+  @media (min-width: $lg-breakpoint) {
+    .banner__inner {
+      max-width: 50%;
+    }
+  }
+}
+
+.banner {
+  border-radius: 10px;
+  margin-bottom: 6.25rem;
+
+  &__inner {
+    text-align: center;
+    padding: 6.25rem 1.5rem;
+    color: $light-cream;
+    margin: 0 auto;
+
+    @media (min-width: $md-breakpoint) {
+      text-align: left;
+      margin: 0;
+      padding: 6.25rem 3.75rem;
+      max-width: 60%;
+
+      @media (min-width: $xl-breakpoint) {
+        max-width: 49%;
+      }
+    }
+
+    p {
+      opacity: .8;
+
+      @media (min-width: $lg-breakpoint) {
+        max-width: 75%;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.commitment {
+  margin-top: 12rem;
+  margin-bottom: 7.5rem;
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+
+  @media (min-width: $md-breakpoint) {
+    text-align: left;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  @media (min-width: $lg-breakpoint) {
+    gap: 6rem;
+  }
+
+  h3 {
+    color: $dark-grey-blue;
+
+    @media (min-width: $md-breakpoint) {
+      margin-top: 0;
+    }
+  }
+
+  picture {
+    display: flex;
+  }
+
+  img {
+    border-radius: 1rem;
+    max-height: 32rem;
+    margin: 0 auto;
+
+    @media (min-width: $md-breakpoint) {
+      height: 32rem;
+    }
+  }
+
+  &__details {
+    align-self: center;
+  }
+
+  p {
+    margin-top: 0;
+  }
+}

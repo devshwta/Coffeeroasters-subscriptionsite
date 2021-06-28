@@ -1,0 +1,92 @@
+.why-us {
+  margin-top: 8rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: $light-cream;
+
+  &__container {
+    background-color: $dark-grey-blue;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  &__inner {
+    padding: 3.5rem;
+
+    @media (min-width: $md-breakpoint) {
+      max-width: 33rem;
+      margin: 0 auto;
+    }
+
+    p {
+      opacity: 0.8;
+      color: $light-cream;
+    }
+  }
+
+  &__reasons {
+    margin-bottom: 6.25rem;
+    padding: 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+    background: url('../../assets/about/desktop/bg-quality.png');
+    background-repeat: no-repeat;
+    background-size: 105% 50%;
+    background-position: top;
+    border-bottom-left-radius: 1rem;
+
+    @media (min-width: $md-breakpoint) {
+      padding: 1.5rem 3rem 3rem 3rem;
+    }
+
+    @media (min-width: $lg-breakpoint) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__reason {
+    background-color: $dark-cyan;
+    border-radius: 1rem;
+    padding: 4rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $md-breakpoint) {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      text-align: left;
+    }
+
+    @media (min-width: $lg-breakpoint) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    &-img {
+      padding: 1rem;
+      margin: 0 auto;
+    }
+
+    &-text {
+      margin: 0 auto;
+      max-width: 15rem;
+
+      @media (min-width: $md-breakpoint) {
+        max-width: 30rem;
+      }
+    }
+
+    &-details {
+      @media (min-width: $md-breakpoint) {
+        max-width: 30rem;
+      }
+
+      h4 {
+        @media (min-width: $md-breakpoint) {
+          margin: 0 0 1rem 0;
+        }
+      }
+    }
+  }
+}

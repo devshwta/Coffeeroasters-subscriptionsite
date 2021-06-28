@@ -1,0 +1,58 @@
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $lg-breakpoint) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+.question {
+  color: $grey;
+}
+
+.light-text {
+  color: $light-cream !important;
+}
+
+.dark-bg {
+  background-color: $dark-grey-blue;
+  color: $light-cream;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  @media (min-width: $lg-breakpoint) {
+    padding: 4rem;
+  }
+
+  p {
+    opacity: .8;
+  }
+}
+
+.dark-line {
+  margin-top: 4rem;
+}
+
+.mb-section {
+  margin-bottom: 6rem;
+}
+
+.active {
+  color: $dark-grey-blue;
+
+  .plan__Link {
+    color: $dark-grey-blue;
+  }
+}
